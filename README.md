@@ -1,8 +1,10 @@
 # Rubq
-Short description and motivation.
+Rubq allows access to Google Bigquery the rails way.
 
 ## Usage
-How to use my plugin.
+Here be dragons!
+
+This is still very much of a work in progress. Unusable for now.
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -22,7 +24,7 @@ $ gem install rubq
 ```
 
 ## Contributing
-Contribution directions go here.
+I will add contribution guidelines as soon as this is ready to use.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
