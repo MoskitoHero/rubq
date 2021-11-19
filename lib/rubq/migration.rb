@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module Rubq
+  # Defines Bigquery migrations
   class Migration
     class << self
       def bigquery

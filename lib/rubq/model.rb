@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module Rubq
+  # Abstraction for Bigquery access
   class Model
     class << self
       def create(fields)

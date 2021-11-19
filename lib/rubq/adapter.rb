@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module Rubq
+  # Wrapper around the Bigquery connection
   class Adapter
     attr_reader :dataset, :table
 
