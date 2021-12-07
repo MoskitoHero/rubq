@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Rubq
-  # Rubq::Adapter is a wrapper around the Bigquery library
+  # Rubq::Adapter is a wrapper around the `Google::Cloud::Bigquery` library
   class Adapter
     extend Forwardable
 

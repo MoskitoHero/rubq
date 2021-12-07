@@ -58,12 +58,51 @@
       </div>
 
       <div id="content"><div id='filecontents'><h1 id="rubq">Rubq</h1>
-<p>Rubq allows access to Google Bigquery the rails way.</p>
+<p>Rubq allows access to Google Bigquery the rails way. It uses the <code>Google::Cloud::Bigquery</code> gem behind the scenes and allows for migrations and basic administration.</p>
 
 <h2 id="usage">Usage</h2>
-<p>Here be dragons!</p>
+<p>Here be dragons! This is a proof-of-concept project I am currently toying around with.</p>
 
-<p>This is still very much of a work in progress. Unusable for now.</p>
+<p>This is still very much of a work in progress. <strong>Unusable for now. You have been warned.</strong></p>
+
+<h3 id="what-works">What works</h3>
+<ul>
+  <li>Creating a model migration and its corresponding table in BigQuery</li>
+  <li>Inserting a row in a managed table</li>
+</ul>
+
+<h3 id="what-does-not-work">What does not work</h3>
+<ul>
+  <li>Everything else</li>
+</ul>
+
+<h3 id="roadmap-to-the-first-usable-version">Roadmap to the first usable version</h3>
+<ul>
+  <li>Write a <code>rubq:migrate</code> task</li>
+  <li>Set up schema validation</li>
+  <li>Set up a test suite</li>
+  <li>Migrations:
+    <ul>
+      <li>Streamline usage</li>
+      <li>Implement <code>self.down</code></li>
+      <li>Create / Delete tables</li>
+    </ul>
+  </li>
+  <li>Model:
+    <ul>
+      <li><code>#new</code></li>
+      <li><code>#delete</code></li>
+      <li><code>#update</code></li>
+      <li>Querying:
+        <ul>
+          <li><code>#all</code></li>
+          <li><code>#find</code></li>
+          <li><code>#find_by</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
 <h2 id="installation">Installation</h2>
 <p>Add this line to your application’s Gemfile:</p>
@@ -99,6 +138,11 @@ end
 <h2 id="documentation">Documentation</h2>
 <p><a href="https://rubydoc.info/github/MoskitoHero/rubq/main">Read the docs</a></p>
 
+<h2 id="faq">FAQ</h2>
+<p><strong>Why not an ActiveRecord adapter?</strong></p>
+
+<p>Because Bigquery is by no means a mere SQL database. This gem is just a wrapper around the <code>Google::Cloud::Bigquery</code> gem that provides convenience methods in an ActiveRecord-like fashion.</p>
+
 <h2 id="contributing">Contributing</h2>
 <p>I will add contribution guidelines as soon as this is ready to use.</p>
 
@@ -107,7 +151,7 @@ end
 </div></div>
 
       <div id="footer">
-  Generated on Tue Dec  7 07:19:13 2021 by
+  Generated on Tue Dec  7 09:25:21 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.4).
 </div>

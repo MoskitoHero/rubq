@@ -7,6 +7,7 @@ module Rubq
   # @attr dataset [String] a Bigquery dataset
   # @attr region [String] a Bigquery region
   class Configuration
+    # List of configurable attributes
     CONFIGURABLE_ATTRIBUTES = %i[project dataset region]
 
     attr_accessor(*CONFIGURABLE_ATTRIBUTES)
