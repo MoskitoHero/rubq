@@ -2,6 +2,10 @@
 
 module Rubq
   # Manages access to the configuration options
+  #
+  # @attr project [String] a GCP project
+  # @attr dataset [String] a Bigquery dataset
+  # @attr region [String] a Bigquery region
   class Configuration
     CONFIGURABLE_ATTRIBUTES = %i[project dataset region]
 

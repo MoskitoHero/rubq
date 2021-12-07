@@ -72,29 +72,32 @@
 gem 'rubq'
 </code></p>
 
-<p>And then execute:
-<code>bash
+<p>And then execute:</p>
+
+<p><code>bash
 $ bundle
 </code></p>
 
-<p>Or install it yourself as:
-<code>bash
+<p>Or install it yourself as:</p>
+
+<p><code>bash
 $ gem install rubq
 </code></p>
 
 <p>Initialize the library:</p>
 
-<p><code>ruby
-  # app/config/initializers/rubq.rb
-  Rubq.configure do |config|
-    config.project  =  'my-google-project'
-    config.region   =  'eu'
-    config.dataset  =  'my-bigquery-dataset'
-  end
-</code></p>
+<p>``` ruby
+# app/config/initializers/rubq.rb</p>
+
+<p>Rubq.configure do |config|
+  config.project  =  ‘my-google-project’
+  config.region   =  ‘eu’
+  config.dataset  =  ‘my-bigquery-dataset’
+end
+```</p>
 
 <h2 id="documentation">Documentation</h2>
-<p>Available soon online. All code is fully yard-documented for now.</p>
+<p><a href="https://rubydoc.info/github/MoskitoHero/rubq/main">Read the docs</a></p>
 
 <h2 id="contributing">Contributing</h2>
 <p>I will add contribution guidelines as soon as this is ready to use.</p>
@@ -104,7 +107,7 @@ $ gem install rubq
 </div></div>
 
       <div id="footer">
-  Generated on Tue Dec  7 07:04:48 2021 by
+  Generated on Tue Dec  7 07:19:13 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.4).
 </div>

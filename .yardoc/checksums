@@ -8,5 +8,5 @@ lib/rubq/inserter.rb 70ef9a86a5b93273e7db87c0f61aa143765225bd
 lib/rubq/migration.rb 3421cd23d1676df240e12025edcf906b1e24b696
 lib/rubq/model/base.rb 12cce94b0d6de87667bb2f8479cba0dbba98b580
 lib/rubq/model/schema.rb 01d312ec57d6d67f7ee9d8764b966392b3403d4b
-lib/rubq/configuration.rb 0201faa637262e9f24637fd39c0338fa94068416
+lib/rubq/configuration.rb 4ceb1b54c40a4f37b7a40414e3f25a6d5fd9f8f1
 lib/generators/rubq/migration/migration_generator.rb ed1bc35118e7f10e8016f0e88845b469d3831bd9

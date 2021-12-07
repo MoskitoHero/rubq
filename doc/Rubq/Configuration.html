@@ -130,6 +130,92 @@
 
 
 
+  <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dataset-instance_method" title="#dataset (instance method)">#<strong>dataset</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>a Bigquery dataset.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#project-instance_method" title="#project (instance method)">#<strong>project</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>a GCP project.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#region-instance_method" title="#region (instance method)">#<strong>region</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>a Bigquery region.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
 
 
 
@@ -265,12 +351,12 @@
       <pre class="lines">
 
 
-17
-18
-19</pre>
+21
+22
+23</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/rubq/configuration.rb', line 17</span>
+      <pre class="code"><span class="info file"># File 'lib/rubq/configuration.rb', line 21</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_attrs'>attrs</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_attributes'>attributes</span> <span class='op'>=</span> <span class='id identifier rubyid_attrs'>attrs</span>
@@ -281,6 +367,194 @@
 </div>
   
 </div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="dataset=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="dataset-instance_method">
+  
+    #<strong>dataset</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>a Bigquery dataset</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of dataset</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9
+10
+11</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubq/configuration.rb', line 9</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_dataset'>dataset</span>
+  <span class='ivar'>@dataset</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="project=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="project-instance_method">
+  
+    #<strong>project</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>a GCP project</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of project</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9
+10
+11</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubq/configuration.rb', line 9</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_project'>project</span>
+  <span class='ivar'>@project</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="region=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="region-instance_method">
+  
+    #<strong>region</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>a Bigquery region</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of region</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9
+10
+11</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubq/configuration.rb', line 9</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_region'>region</span>
+  <span class='ivar'>@region</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
 
 
   <div id="class_method_details" class="method_details_list">
@@ -324,12 +598,12 @@
       <pre class="lines">
 
 
-11
-12
-13</pre>
+15
+16
+17</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/rubq/configuration.rb', line 11</span>
+      <pre class="code"><span class="info file"># File 'lib/rubq/configuration.rb', line 15</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_configurable_attributes'>configurable_attributes</span>
   <span class='const'><span class='object_link'><a href="#CONFIGURABLE_ATTRIBUTES-constant" title="Rubq::Configuration::CONFIGURABLE_ATTRIBUTES (constant)">CONFIGURABLE_ATTRIBUTES</a></span></span>
@@ -399,12 +673,12 @@
       <pre class="lines">
 
 
-23
-24
-25</pre>
+27
+28
+29</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/rubq/configuration.rb', line 23</span>
+      <pre class="code"><span class="info file"># File 'lib/rubq/configuration.rb', line 27</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_attributes='>attributes=</span><span class='lparen'>(</span><span class='id identifier rubyid_attrs'>attrs</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_attrs'>attrs</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_key'>key</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='op'>|</span> <span class='id identifier rubyid_instance_variable_set'>instance_variable_set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>@</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_key'>key</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
@@ -419,7 +693,7 @@
 </div>
 
       <div id="footer">
-  Generated on Tue Dec  7 07:04:48 2021 by
+  Generated on Tue Dec  7 07:19:13 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.27 (ruby-2.7.4).
 </div>
