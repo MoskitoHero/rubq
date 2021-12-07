@@ -28,7 +28,7 @@ module Rubq
 
   # @return [Rubq::Adapter]
   def self.adapter
-    @adapter ||= Adapdter.new
+    @adapter ||= Adapter.new
   end
 
   def self.configure(&block)
