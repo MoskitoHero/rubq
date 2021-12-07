@@ -13,8 +13,13 @@ module Rubq
   autoload :Fieldset,       'rubq/fieldset'
   autoload :Error,          'rubq/error'
 
+  # Error raised whenever a misconfiguration is found
   ConfigurationError = Class.new(Error)
+
+  # Error raised when the adapter fails to insert a record in the database
   InsertionError = Class.new(Error)
+
+  # Error raised when the provided data does not match the table Schema
   ValidationError = Class.new(Error)
 
   # @return [Logger]
