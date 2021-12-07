@@ -14,11 +14,13 @@ gem 'rubq'
 ```
 
 And then execute:
+
 ```bash
 $ bundle
 ```
 
 Or install it yourself as:
+
 ```bash
 $ gem install rubq
 ```
@@ -27,6 +29,7 @@ Initialize the library:
 
 ``` ruby
 # app/config/initializers/rubq.rb
+
 Rubq.configure do |config|
   config.project  =  'my-google-project'
   config.region   =  'eu'
