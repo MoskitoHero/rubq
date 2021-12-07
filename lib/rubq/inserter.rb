@@ -13,7 +13,7 @@ module Rubq
       @table = table
     end
 
-    # @param row [Hash] the row to insert in the table
+    # @param row [Hash] a hash of key/value pairs to be inserted
     # @raise [Rubq::InsertionError] if the fields do not validate against the schema
     # @return [Google::Cloud::Bigquery::InsertResponse]
     def insert(row)
