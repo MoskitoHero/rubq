@@ -11,6 +11,7 @@ module Rubq
   autoload :Configuration,  'rubq/configuration'
   autoload :Inserter,       'rubq/inserter'
   autoload :Fieldset,       'rubq/fieldset'
+  autoload :Error,          'rubq/error'
 
   ConfigurationError = Class.new(Error)
   InsertionError = Class.new(Error)
