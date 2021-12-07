@@ -18,7 +18,7 @@ module Rubq
         end
 
         # (see #create)
-        # @note This imperative method will raise an error if validation fails or if
+        # @note This method will raise an error if validation fails or if the row cannot be inserted
         def create!(fields)
           row = FieldSet.new(fields, schema).validate!
           Inserter.new(table).insert(row)
