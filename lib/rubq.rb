@@ -1,11 +1,47 @@
 # frozen_string_literal: true
 
-require 'rubq'
+# require 'rubq'
 require 'google/cloud/bigquery'
 
 # Rubq allows access to Google Bigquery the rails way
 module Rubq
-  autoload :Adapter,      'rubq/adapter'
-  autoload :Model,        'rubq/model'
-  autoload :Migration,    'rubq/migration'
+  autoload :Adapter,        'rubq/adapter'
+  autoload :Model,          'rubq/model'
+  autoload :Migration,      'rubq/migration'
+  autoload :Configuration,  'rubq/configuration'
+  autoload :Inserter,       'rubq/inserter'
+  autoload :Fieldset,       'rubq/fieldset'
+
+  ConfigurationError = Class.new(Error)
+  InsertionError = Class.new(Error)
+  ValidationError = Class.new(Error)
+
+  # @return [Logger]
+  def self.logger
+    @logger ||= Logger.new($stdout)
+  end
+
+  # @param [Logger] logger
+  def self.logger=(logger)
+    @logger = logger
+  end
+
+  # @return [Rubq::Adapter]
+  def self.adapter
+    @adapter ||= Adapdter.new
+  end
+
+  def self.configure(&block)
+    reset!
+    adapter.configure(&block)
+  end
+
+  def self.reset!
+    @adapter = nil
+  end
+
+  # @return [Rubq::Configuration]
+  def self.configuration
+    adapter.configuration
+  end
 end

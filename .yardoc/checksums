@@ -1,0 +1,12 @@
+lib/rubq.rb 1220828317928122927be5e1cda59b7faa403298
+lib/rubq/model.rb ed6ce99fe8416abe1947e50e9a190cbb0d4100c4
+lib/rubq/adapter.rb 410d4a79fbbeed4cd00e67335610254d5d8f99ef
+lib/rubq/railtie.rb 4a5ab8e1b35515c99205b7e464c191a86585aa8a
+lib/rubq/version.rb 3487497ef150dc7a23981421a0b59c18e48104d3
+lib/rubq/fieldset.rb 2ac462f09d7c1b575c22c18d676b2a0a9a6b81de
+lib/rubq/inserter.rb 70ef9a86a5b93273e7db87c0f61aa143765225bd
+lib/rubq/migration.rb 3421cd23d1676df240e12025edcf906b1e24b696
+lib/rubq/model/base.rb 12cce94b0d6de87667bb2f8479cba0dbba98b580
+lib/rubq/model/schema.rb 01d312ec57d6d67f7ee9d8764b966392b3403d4b
+lib/rubq/configuration.rb 0201faa637262e9f24637fd39c0338fa94068416
+lib/generators/rubq/migration/migration_generator.rb ed1bc35118e7f10e8016f0e88845b469d3831bd9

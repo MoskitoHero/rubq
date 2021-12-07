@@ -23,6 +23,20 @@ Or install it yourself as:
 $ gem install rubq
 ```
 
+Initialize the library:
+
+``` ruby
+# app/config/initializers/rubq.rb
+Rubq.configure do |config|
+  config.project  =  'my-google-project'
+  config.region   =  'eu'
+  config.dataset  =  'my-bigquery-dataset'
+end
+```
+
+## Documentation
+Available soon online. All code is fully yard-documented for now.
+
 ## Contributing
 I will add contribution guidelines as soon as this is ready to use.
 

@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
   spec.required_ruby_version = '>= 2.7'
-  spec.add_dependency 'google-cloud-bigquery', '~> 1.27', '>= 1.27'
+  spec.add_dependency 'dry-validation', '~> 1.6', '>= 1.6'
+  spec.add_dependency 'google-cloud-bigquery', '~> 1.38', '>= 1.38'
   spec.add_dependency 'rails', '~> 6.1.4', '>= 6.1.4.1'
 end

@@ -1,0 +1,13 @@
+ class <%= @migration_name %> < Rubq::Migration
+   def self.up
+     adapter.create_table '<%= @table_name %>' do |t|
+       t.schema do |schema|
+
+         schema.timestamp 'created_at', mode: :required
+         schema.timestamp 'updated_at', mode: :required
+       end
+       t.time_partitioning_type  = 'DAY'
+       t.time_partitioning_field = 'created_at'
+     end
+   end
+ end

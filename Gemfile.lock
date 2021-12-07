@@ -2,7 +2,8 @@ PATH
   remote: .
   specs:
     rubq (0.0.1)
-      google-cloud-bigquery (~> 1.27, >= 1.27)
+      dry-validation (~> 1.6, >= 1.6)
+      google-cloud-bigquery (~> 1.38, >= 1.38)
       rails (~> 6.1.4, >= 6.1.4.1)
 
 GEM
@@ -75,6 +76,38 @@ GEM
     concurrent-ruby (1.1.9)
     crass (1.0.6)
     declarative (0.0.20)
+    dry-configurable (0.13.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.6)
+    dry-container (0.9.0)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.13, >= 0.13.0)
+    dry-core (0.7.1)
+      concurrent-ruby (~> 1.0)
+    dry-inflector (0.2.1)
+    dry-initializer (3.0.4)
+    dry-logic (1.2.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.5, >= 0.5)
+    dry-schema (1.8.0)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.13, >= 0.13.0)
+      dry-core (~> 0.5, >= 0.5)
+      dry-initializer (~> 3.0)
+      dry-logic (~> 1.0)
+      dry-types (~> 1.5)
+    dry-types (1.5.1)
+      concurrent-ruby (~> 1.0)
+      dry-container (~> 0.3)
+      dry-core (~> 0.5, >= 0.5)
+      dry-inflector (~> 0.1, >= 0.1.2)
+      dry-logic (~> 1.0, >= 1.0.2)
+    dry-validation (1.7.0)
+      concurrent-ruby (~> 1.0)
+      dry-container (~> 0.7, >= 0.7.1)
+      dry-core (~> 0.5, >= 0.5)
+      dry-initializer (~> 3.0)
+      dry-schema (~> 1.8, >= 1.8.0)
     erubi (1.10.0)
     faraday (1.8.0)
       faraday-em_http (~> 1.0)
@@ -238,4 +271,4 @@ DEPENDENCIES
   sqlite3
 
 BUNDLED WITH
-   2.2.29
+   2.2.32
