@@ -34,7 +34,7 @@ module Rubq
 
       # @return [Rubq::Adapter] a Rubq::Adapter instance
       def adapter
-        @adapter ||= Rubq::Adapter.new
+        Rubq.adapter
       end
     end
   end

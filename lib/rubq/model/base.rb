@@ -18,7 +18,7 @@ module Rubq
         end
 
         # (see #create)
-        # @note This method will raise an error if validation fails or if the row cannot be inserted
+        # @note This imperative method will raise an error if validation fails or if
         def create!(fields)
           row = FieldSet.new(fields, schema).validate!
           Inserter.new(table).insert(row)
@@ -26,14 +26,9 @@ module Rubq
 
         private
 
-        # @return [Rubq::Adapter]
-        def adapter
-          Rubq::Adapter.new
-        end
-
         # @return [Google::Cloud::Bigquery::Table]
         def table
-          @table ||= adapter.dataset.table(table_name)
+          @table ||= Rubq.adapter.dataset.table(table_name)
         end
 
         # @return [Rubq::Schema]
