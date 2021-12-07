@@ -38,7 +38,7 @@ end
 ```
 
 ## Documentation
-Available soon online. All code is fully yard-documented for now.
+[Read the docs](https://rubydoc.info/github/MoskitoHero/rubq/main)
 
 ## Contributing
 I will add contribution guidelines as soon as this is ready to use.
