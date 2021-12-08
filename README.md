@@ -57,7 +57,7 @@ Initialize the library:
 Rubq.configure do |config|
   config.project  =  'my-google-project'
   config.region   =  'eu'
-  config.dataset  =  'my-bigquery-dataset'
+  config.dataset  =  'mybigquerydataset'
 end
 ```
 

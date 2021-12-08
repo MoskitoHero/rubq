@@ -10,6 +10,7 @@ group :development do
   gem 'sqlite3'
 end
 
-# To use a debugger
 gem 'byebug', group: %i[development test]
 gem 'rubocop', group: :development
+gem 'vcr', group: :test
+gem 'webmock', group: :test

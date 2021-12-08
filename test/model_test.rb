@@ -3,8 +3,8 @@
 require 'test_helper'
 
 class ModelTest < ActiveSupport::TestCase
-  # test 'it returns an instance of Rubq::Adapter' do
-  #   assert_instance_of Rubq::Adapter, Rubq::Model.adapter,
-  #                      msg = 'Model#adapter must return an instance of Rubq::Adapter'
-  # end
+  test 'it has a table' do
+    table = Payload.send(:table)
+    assert_instance_of Google::Cloud::Bigquery::Table, table
+  end
 end

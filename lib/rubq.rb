@@ -1,17 +1,20 @@
 # frozen_string_literal: true
 
-# require 'rubq'
 require 'google/cloud/bigquery'
 
 # Rubq allows access to Google Bigquery the rails way
 module Rubq
   autoload :Adapter,        'rubq/adapter'
-  autoload :Model,          'rubq/model'
   autoload :Migration,      'rubq/migration'
   autoload :Configuration,  'rubq/configuration'
   autoload :Inserter,       'rubq/inserter'
   autoload :Fieldset,       'rubq/fieldset'
   autoload :Error,          'rubq/error'
+
+  module Model
+    autoload :Base,    'rubq/model/base'
+    autoload :Schema,  'rubq/model/schema'
+  end
 
   # Error raised whenever a misconfiguration is found
   ConfigurationError = Class.new(Error)

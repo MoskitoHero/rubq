@@ -24,16 +24,14 @@ module Rubq
       @configuration ||= Configuration.new
     end
 
-    private
-
     # @return [Google::Cloud::Bigquery]
-    def bigquery
-      @bigquery ||= Google::Cloud::Bigquery.new(project: configuration.project)
+    def connection
+      @connection ||= Google::Cloud::Bigquery.new(project: configuration.project)
     end
 
-    # @return [Symbol]
+    # @return [Google::Cloud::Bigquery::Dataset, NilClass]
     def dataset
-      @dataset ||= bigquery.dataset(configuration.dataset)
+      @dataset ||= connection.dataset(configuration.dataset)
     end
   end
 end

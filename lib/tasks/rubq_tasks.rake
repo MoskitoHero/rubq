@@ -1,12 +1,10 @@
 # frozen_string_literal: true
 
+require 'rubq/tasks'
+
 namespace :rubq do
   desc "Migrate the database"
   task migrate: :environment do
-    paths = Rails.application.paths["bq/migrate"].to_a
-    paths.each do |path|
-      require path
-
-    end
+    Rubq::Tasks::Migrate.call
   end
 end
