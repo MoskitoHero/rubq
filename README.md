@@ -2,9 +2,9 @@
 Rubq allows access to Google Bigquery the rails way. It uses the `Google::Cloud::Bigquery` gem behind the scenes and allows for migrations and basic administration.
 
 ## Usage
-Here be dragons! This is a proof-of-concept project I am currently toying around with.
+**This is still very much of a work in progress. You have been warned.**
 
-This is still very much of a work in progress. **Unusable for now. You have been warned.**
+When the first really useful version is available, usage directives will be written here. In the mean time, take a look at the docs below.
 
 ### What works
 * Creating a model migration and its corresponding table in BigQuery
