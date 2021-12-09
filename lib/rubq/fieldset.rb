@@ -21,7 +21,7 @@ module Rubq
     # @return [TrueClass] if the fields meet the validation requirements
     # @return [FalseClass] if the fields do not meet the validation requirements
     def validate
-      true
+      @fields if true
     end
 
     # Validates the fields against the Schema
@@ -30,7 +30,7 @@ module Rubq
     # @return [TrueClass] if the fields meet the validation requirements
     # @return [FalseClass] if the fields do not meet the validation requirements
     def validate!
-      true
+      @fields if true
     end
   end
 end

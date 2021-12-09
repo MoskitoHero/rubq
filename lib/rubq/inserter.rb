@@ -23,7 +23,7 @@ module Rubq
 
       return true if response.success?
 
-      raise Rubq::InsertionError, response.insert_errors.first.message
+      raise Rubq::InsertionError, response.insert_errors.first.errors.first['message']
     end
   end
 end
