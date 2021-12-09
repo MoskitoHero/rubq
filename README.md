@@ -16,7 +16,6 @@ When the first really useful version is available, usage directives will be writ
 ### Roadmap to the first usable version
 * Write a `rubq:migrate` task
 * Set up schema validation
-* Set up a test suite
 * Migrations:
   * Streamline usage
   * Implement `self.down`
